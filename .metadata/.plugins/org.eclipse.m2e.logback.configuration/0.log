@@ -1,0 +1,15 @@
+2020-03-23 10:08:00,543 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2020-03-23 10:09:54,663 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @270040ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-23 10:09:54,750 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.27.v20200227; built: 2020-03-02T14:40:42.212Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_65-b17
+2020-03-23 10:09:54,766 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2020-03-23 10:09:54,766 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2020-03-23 10:09:54,767 [Start Help Server] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2020-03-23 10:09:54,789 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@24984c6c{/help,null,AVAILABLE}
+2020-03-23 10:09:54,803 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5212e400{HTTP/1.1, (http/1.1)}{127.0.0.1:51541}
+2020-03-23 10:09:54,803 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @270182ms
+2020-03-23 10:09:54,803 [Start Help Server] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2020-03-23 10:13:54,746 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5212e400{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2020-03-23 10:13:54,747 [Stop Help Server] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+2020-03-23 10:13:54,768 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@24984c6c{/help,null,UNAVAILABLE}
+2020-03-23 10:14:50,057 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-03-24 08:23:40,243 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

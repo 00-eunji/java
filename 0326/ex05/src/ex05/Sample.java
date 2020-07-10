@@ -1,0 +1,105 @@
+package ex05;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		// 성적 입력 프로그램 실습
+		Scanner s=new Scanner(System.in);
+		boolean run=true;
+		String [] number = new String[100];
+		String[] name = new String[100];
+		int [] kor = new int [100];
+		int [] eng = new int [100];
+		int [] mat = new int [100];
+		double avg = 0;
+		int sum = 0;
+		int count= 0;
+		
+		while (run) {
+			System.out.println("--------------------------------------------");
+			System.out.println("1.성적입력 | 2.성적목록 | 3.성적조회 | 4.종료");
+			System.out.println("--------------------------------------------");
+			System.out.print("선택>");
+			
+			
+			int menu=s.nextInt();
+			
+			
+			switch (menu) {
+			
+			case 1 ://성적입력
+				System.out.println("--------------------------------------------");
+				System.out.println("성적입력");
+				System.out.println("--------------------------------------------");
+				
+				System.out.print("번호>");
+				number[count]=s.next();
+				System.out.print("성명>");
+				name[count]=s.next();
+				System.out.print("국어>");
+				kor[count]=s.nextInt();
+				System.out.print("영어>");
+				eng[count]=s.nextInt();
+				System.out.print("수학>");
+				mat[count]=s.nextInt();
+				
+				System.out.println("결과: 성적입료완료");
+				
+				count= count+1;
+				
+				break;
+			case 2: //성적목록
+				System.out.println("--------------------------------------------");
+				System.out.println("번호 " + "\t"+ "이름"+ "\t" + "국어" + "\t" + 
+									"영어"+ "\t" +"수학" + "\t" + "평균");
+				System.out.println("--------------------------------------------");
+				for(int i=0; i<=count-1; i++) {
+					sum= kor[i]+ eng[i]+ mat[i]; 
+					avg= (double)sum/3;
+					System.out.println(number[i] + "\t" + name[i] + "\t" + kor[i] + 
+									"\t" + eng[i] + "\t" + mat[i] + "\t" +avg);
+				}
+				System.out.println();
+				break;
+			case 3: //성적조회
+				System.out.println("--------------------------------------------");
+				System.out.println("성적조회");
+				System.out.println("--------------------------------------------");
+				
+				System.out.print("번호>");
+				String num=s.next();
+				
+				for(int i=0; i<=count-1; i++) {
+					if(number[i].equals(num)) {
+					System.out.println("성명>" + name[i]);
+					System.out.println("국어>" + kor[i]);
+					System.out.println("영어>" + eng[i]);
+					System.out.println("수학>" + mat[i]);
+					}
+				}
+			
+				break;
+			case 4://종료
+				run=false;
+				System.out.println("프로그램 종료");
+				break;
+				
+			default:
+				System.out.println("잘못입력하셨습니다.");
+			
+			
+			
+			
+			
+			}//switch	
+			
+		}//while
+		
+		
+		
+
+	}
+
+}

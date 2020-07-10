@@ -1,0 +1,70 @@
+package ex02;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		
+		// 학생별 점수리스트 제작하기
+		Scanner s=new Scanner(System.in);
+		boolean run=true;
+		int [] scores = null; //초기화값, 값을 모르기 때문에
+		int sum=0;
+		int[] list= new int[scores.length];
+		
+		while(run) {
+			System.out.println("-----------------------------------------------");
+			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+			System.out.println("-----------------------------------------------");
+			
+			System.out.print("선택>");
+			int menu=s.nextInt();
+			
+			
+			switch(menu) {
+				case 1:
+					System.out.print("1.학생수>");
+					int count=s.nextInt();
+					scores=new int[count];
+					break;
+				case 2:
+					for(int i=0; i<=scores.length-1; i++) {
+						System.out.print("점수[" + i + "]>");
+						scores[i]=s.nextInt();
+					}//for
+					break;
+				case 3:
+					
+				
+						System.out.print("점수[" + list+ "]:");
+					
+					
+					break;
+				case 4:
+					System.out.print("최고점수:");
+					System.out.print("평균점수:");
+					break;
+				case 5:
+					run=false;
+					System.out.print("프로그램 종료");
+				default:
+					System.out.println("잘못 입력하셨습니다.");
+			}//switch
+			
+			
+		}//while
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}//main method
+
+}//Sample

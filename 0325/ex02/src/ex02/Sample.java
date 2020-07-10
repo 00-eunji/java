@@ -1,0 +1,54 @@
+package ex02;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		System.out.println("[1] 1~100 까지의 합계");
+		System.out.println("[2] 1~100 까지의 짝수 합계");
+		System.out.println("[3] 1~100 까지의 홀수 합계");
+		System.out.println("[4] 프로그램 종료\n");
+		
+		boolean run=true; 
+		while (run) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("메뉴를 선택하시오[1~4]?\n");
+		int menu=s.nextInt();
+		
+		int sum=0;
+		
+		switch(menu) {
+		case 1:
+			System.out.println("\n 1~100까지의 합계= ");
+			for(int i=1; i<=100; i=i+1) {
+				sum=sum+i;
+			}
+			System.out.println(sum);
+			break;
+		case 2:
+			System.out.println("\n 1~100까지의 짝수 합계= ");
+			for(int i=0; i<=100; i=i+2) {
+				sum=sum+i;
+			}
+			System.out.println(sum);
+			break;
+		case 3:
+			System.out.println("\n 1~100까지의 홀수 합계= ");
+			for(int i=1; i<=100; i=i+2) {
+				sum=sum+i;
+			}
+			System.out.println(sum);
+			break;
+		case 4:
+			run=false;
+			System.out.println("\n 프로그램을 종료합니다.");
+			break;
+		default:
+			System.out.println("\n 잘못 입력하셨습니다.");
+		}
+		}
+
+	}
+
+}

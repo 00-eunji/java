@@ -1,0 +1,21 @@
+package ex08;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		for1();
+
+	}
+	
+	
+	Scanner scanner=new Scanner(System.in);
+	public static void for1() {
+		System.out.println("숫자입력>100");
+		int sum=0;
+		for(int i=1; i<=100; i++) {
+			sum= sum + i;
+		}
+		System.out.println("1~100까지의 합계:" + sum);
+}

@@ -1,0 +1,21 @@
+package ex05;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		// 
+		
+		
+		
+		
+		
+		
+	}// main method
+
+	
+	public void switch1() {
+		System.out.println("switch ¿¹Á¦");
+	
+	} //method2
+	
+}//sample

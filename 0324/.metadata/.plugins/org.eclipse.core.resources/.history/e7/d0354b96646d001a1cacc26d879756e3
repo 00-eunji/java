@@ -1,0 +1,16 @@
+package ex01;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		// 조건문 생성하기
+			int score = 70;
+			if(score >= 90) {
+				System.out.println("점수가 90점 이상입니다.");
+			}
+			if(score < 90) {
+				System.out.println(score + "은(는) 90점보다 작습니다. \n등급은 B입니다");
+			}	
+	}
+
+}
